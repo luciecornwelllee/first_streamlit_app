@@ -43,6 +43,10 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Hello from Snowflake:")
 streamlit.dataframe(my_data_rows)
 
+# allow the end user to add fruit to the list 
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
+streamlit.write ('Thanks for adding', add_my_fruit)
+
 
 
 
