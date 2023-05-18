@@ -41,9 +41,7 @@ try:
        back_from_function = get_fruityvice_data(fruit_choice)
        streamlit.dataframe(back_from_function)
       
-# user chooses fruit from list     
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('The user entered ', fruit_choice)
+
 
 # fruit load list query 
 streamlit.header("The fruit load list contains:")
